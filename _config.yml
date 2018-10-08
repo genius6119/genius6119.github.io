@@ -2,12 +2,12 @@
 title: BY Zwx.
 SEOTitle: 老张的博客 | BY Zwx.
 header-img: img/post-bg-desk.jpg
-email: qiubaiying@gmail.com
+email: 1065344157@qq.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 老张的博客, qiubaiying, 张文轩, iOS, Apple, iPhone"
-url: "http://qiubaiying.github.io"          # your host, for absolute URL
+keyword: "BY, BY Blog, 老张的博客, zhangwenxuan, 张文轩, iOS, Apple, iPhone"
+url: "http://genius6119.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "https://github.com/genius6119/genius6119.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -78,7 +78,7 @@ ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
 ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_domain: zwxzzz.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -99,9 +99,6 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
-    },{
         title: "简书·BY",
         href: "http://www.jianshu.com/u/e71990ada2fd"
     },{
