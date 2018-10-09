@@ -1,10 +1,10 @@
 # Site settings
-title: BY Zwx.
-SEOTitle: 老张的博客 | BY Zwx.
+title: Zwx. Blog
+SEOTitle: 老张的博客 | Zwx. Blog
 header-img: img/post-bg-desk.jpg
 email: 1065344157@qq.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 老张的博客, zhangwenxuan, 张文轩, iOS, Apple, iPhone"
+keyword: "Zwx, Zwx Blog, 老张的博客, zhangwenxuan, 张文轩, Java, Spring, Js"
 url: "http://genius6119.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/genius6119/genius6119.github.io" # you code repository
