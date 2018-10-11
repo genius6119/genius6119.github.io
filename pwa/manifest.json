@@ -1,14 +1,14 @@
 {
-  "name": "BY Blog",
-  "short_name": "BY Blog",
-  "description": "A personal blog by engineer",
+  "name": "ZWX. Blog",
+  "short_name": "ZWX. Blog",
+  "description": "A personal blog for Java engineer",
   "icons": [{
     "src": "icons/pwa_icon_128.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "icons/pwa_icon_512.png",
-    "sizes": "512x512",
+    "src": "icons/pwa_icon_128.png",
+    "sizes": "128*128",
     "type": "image/png"
   }],
   "background_color": "#fff",
