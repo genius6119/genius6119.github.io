@@ -1,7 +1,7 @@
 # Site settings
 title: Zwx. Blog
 SEOTitle: 老张的博客 | Zwx. Blog
-header-img: img/touxiang.png
+header-img: img/Game_of_Thrones.jpg
 email: 1065344157@qq.com
 description: "Every failure is leading towards success."
 keyword: "Zwx, Zwx Blog, 老张的博客, zhangwenxuan, 张文轩, Java, Spring, Js"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/genius6119/genius6119.github.io" # you code rep
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/touxiang.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
