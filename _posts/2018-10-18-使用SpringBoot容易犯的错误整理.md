@@ -11,7 +11,7 @@ tags:
 ---
 
 ----
-##前言
+## 前言
 [SpringBoot](https://spring.io/projects/spring-boot)是Spring社区2014年发布的一个轻量级微服务框架，解决了Spring“配置地狱”的问题。
 
 该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。
@@ -21,7 +21,7 @@ tags:
 我在初学JavaWeb时，照着教学视频敲过一个SpringBoot的项目，这几天工作上的活少，自己又从头搭了一个SpringBoot的框架，把遇到的问题记录下来。
 
 ---
-##新建SpringBoot项目
+## 新建SpringBoot项目
 
 虽然可以直接在IDEA中新建，但我还是习惯进入[spring.start.io](https://start.spring.io/)网页设置。两种都很方便，这里介绍使用网页下载的方式：
 
@@ -31,7 +31,7 @@ Group设置组织名、Artifact设置项目名、选择Maven Project，Javelin�
 点击Generate Project按钮,就可以得到一个空的SpringBoot项目了，解压后用idea直接打开就行。
 
 ---
-##SpringBoot配置
+## SpringBoot配置
 打开项目，结构如图所示：
 ![](http://pgoj9ayje.bkt.clouddn.com/mulu.png)
 配置文件都放在resources下，除了.xml配置文件外，SpringBoot还支持.yml和.properties配置文件。个人认为，后两者都比.xml好很多。
@@ -69,7 +69,7 @@ spring:  
 .yml的可读性和简洁性都比.xml好太多。当然，这个东西也是仁者见仁。
 
 ---
-##Controller 接口404问题
+## Controller 接口404问题
 
 必须把Controller类放到XXXApplication.java同级或同级包的下层目录中,不然启动Application.main(SpringBoot启动方法)启动时会扫描不到。
 
@@ -99,7 +99,7 @@ spring:  
 注意：`<resources>`是加在`<build>`标签里的。
 
 ---
-##上传文件大小限制
+## 上传文件大小限制
 
 使用mutipartfile上传文件时，报错：
 ```
@@ -116,7 +116,7 @@ spring:
 ```
 
 ---
-##待更...
+## 待更...
 
 
 
