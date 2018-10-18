@@ -4,7 +4,7 @@ title:      使用SpringBoot容易犯的错误整理
 subtitle:   在一个空的SpringBoot项目上的例子
 date:       2018-10-18
 author:     Zwx
-header-img: img/post-bg-coffee.jpg
+header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
     - SpringBoot
