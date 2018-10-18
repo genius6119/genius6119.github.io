@@ -144,7 +144,7 @@ public class MumushowApplication {
 2018-10-18 16:57:25
 2018-10-18 16:57:30
 ```
-关于`@Scheduled(cron = "")`注解中的corn表达式，可以使用[这个网站](http://cron.qqe2.com/)进行在线生成。
+关于`@Scheduled(cron = "")`注解中的cron表达式，可以使用[这个网站](http://cron.qqe2.com/)进行在线生成。
 
 
 
