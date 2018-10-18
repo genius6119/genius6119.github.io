@@ -116,7 +116,34 @@ spring:
 ```
 
 ---
-## 待更...
+## SpringBoot定时器
+
+在xxxAplication.java 的类头上加注解：
+```
+@SpringBootApplication
+@EnableScheduling
+public class MumushowApplication {
+
+```
+在方法上加上注解：
+```
+    @Scheduled(cron = "0/5 * * * * ? ")
+    public String test (){
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");	//设置日期格式
+        System.out.println(df.format(new Date()));				// new Date()为获取当前系统时间
+        return null;
+    }
+```
+控制台输出结果：
+```
+2018-10-18 16:57:00
+2018-10-18 16:57:05
+2018-10-18 16:57:10
+2018-10-18 16:57:15
+2018-10-18 16:57:20
+2018-10-18 16:57:25
+2018-10-18 16:57:30
+```
 
 
 
