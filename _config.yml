@@ -99,13 +99,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "BaiDu",
+        href: "http://www.baidu.com"
     },{
-        title: "Apple",
-        href: "https://apple.com"
+        title: "Google",
+        href: "https://www.google.com"
     },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "GitHub",
+        href: "https://github.com/"
     }
 ]
