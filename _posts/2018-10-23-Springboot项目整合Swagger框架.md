@@ -131,7 +131,7 @@ public class DemoApplication {
 ```
 
 ---
-## 编写API文档
+## 注解
 
 Swagger是通过注解的方式自动生成API文档的，主要的注解有：
 ```
@@ -170,3 +170,62 @@ Swagger是通过注解的方式自动生成API文档的，主要的注解有：
 
 ```
 
+例子：
+
+```java
+@Api(value = "这是一个Hello类" ,tags = {"Hello TAGS"})
+@RestController
+public class HelloController {
+    @ApiOperation(value = "这是一个作用为Hello的类",notes = "备注说明")
+    @RequestMapping(value = "/hello", method= RequestMethod.GET)
+    public String hello(){
+        System.out.println("hello");
+        return "Hello！！！！";
+    }
+}
+```
+
+效果：
+
+![](http://pgoj9ayje.bkt.clouddn.com/234.png)
+
+例子2：
+```java
+    @ResponseBody
+    @RequestMapping(value = "/updatePassword", method= RequestMethod.GET)
+    @ApiOperation(value="修改用户密码", notes="根据用户id修改密码")
+    @ApiImplicitParams({
+            @ApiImplicitParam(paramType="query", name = "userId", value = "用户ID", required = true, dataType = "Integer"),
+            @ApiImplicitParam(paramType="query", name = "password", value = "旧密码", required = true, dataType = "String"),
+            @ApiImplicitParam(paramType="query", name = "newPassword", value = "新密码", required = true, dataType = "String")
+    })
+    public String updatePassword(@RequestParam(value="userId") Integer userId, @RequestParam(value="password") String password,
+                                 @RequestParam(value="newPassword") String newPassword){
+        if(userId <= 0 || userId > 2){
+            return "未知的用户";
+        }
+        if(StringUtils.isEmpty(password) || StringUtils.isEmpty(newPassword)){
+            return "密码不能为空";
+        }
+        if(password.equals(newPassword)){
+            return "新旧密码不能相同";
+        }
+        return "密码修改成功!";
+    }
+```
+
+效果：
+![](http://pgoj9ayje.bkt.clouddn.com/456.png)
+
+
+----
+
+
+
+
+参考：
+
+
+[Swagger官网](http://swagger.io/)
+
+[https://blog.csdn.net/sanyaoxu_2/article/details/80555328](https://blog.csdn.net/sanyaoxu_2/article/details/80555328)
