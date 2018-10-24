@@ -11,7 +11,7 @@ tags:
 ---
 
 ----
-## 前言
+## 前言：
 [SpringBoot](https://spring.io/projects/spring-boot)是Spring社区2014年发布的一个轻量级微服务框架，解决了Spring“配置地狱”的问题。
 
 该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。
