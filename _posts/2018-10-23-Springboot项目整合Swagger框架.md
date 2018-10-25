@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      SpringBoot项目整合Swagger框架
-subtitle:   Swagger2
+subtitle:   SpringBoot1.5.18 + Swagger2
 date:       2018-10-23
 author:     Zwx
 header-img: img/post-bg-os-metro.jpg
