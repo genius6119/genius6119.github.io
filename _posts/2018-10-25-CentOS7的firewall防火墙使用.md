@@ -39,9 +39,9 @@ systemctl是CentOS7的服务管理工具中主要的工具，它融合之前serv
 
 在开机时禁用一个服务：systemctl disable firewalld.service
 
-查看服务是否开机启动：systemctl is-enabled firewalld.service
+查看服务是否开机启动： systemctl is-enabled firewalld.service
 
-查看已启动的服务列表：systemctl list-unit-files|grep enabled
+查看已启动的服务列表： systemctl list-unit-files|grep enabled
 
 查看启动失败的服务列表：systemctl --failed
 
