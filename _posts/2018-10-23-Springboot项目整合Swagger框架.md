@@ -27,7 +27,7 @@ tags:
 因为是maven项目，所以pom.xml里添加依赖（版本号可变）：
 
 ```xml
-        <dependency>
+        	<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.2.2</version>

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      事务(Transactional)详解笔记
+title:      事务(Transactional)详解
 subtitle:   事务特性、隔离级别、传播机制
 date:       2018-10-24
 author:     Zwx
@@ -94,4 +94,6 @@ ACID!
 　　自己写代码定义事务逻辑，侵入了主体逻辑，最细粒度为代码语句。
 #### 声明式事务
 　　可以用@Transactional注解，最细粒度为方法。
+  
+　　这部分内容下一篇再写~
 　　
