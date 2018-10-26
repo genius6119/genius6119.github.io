@@ -107,5 +107,8 @@ friends: [
     },{
         title: "GitHub",
         href: "https://github.com/"
+    },{
+        title: "Young",
+        href: "http://hayye.cn/"
     }
 ]
