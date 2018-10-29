@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      @Transactional注解的用法和实例
-subtitle:   自己写的声明式事务@Transactional
+title:      事务（@Transactional注解)的用法和实例
+subtitle:   自己写的声明式事务@Transactional例子
 date:       2018-10-29
 author:     Zwx
-header-img: img/post-bg-digital-native.jpg
+header-img: img/post-bg-YesOrNo.jpg
 catalog: true
 tags:
     - Sql
