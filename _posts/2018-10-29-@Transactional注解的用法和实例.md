@@ -10,8 +10,7 @@ tags:
     - Sql
     - Java
 ---
-
-----
+---
 ## 参数
 
 @Transactional可以配制那些参数及以其所代表的意义：
