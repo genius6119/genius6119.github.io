@@ -83,3 +83,39 @@ Spring默认情况下会对运行期例外(RunTimeException)进行事务回滚�
 #### noRollbackForClassName/noRollbackFor
 
 用来指明不回滚的条件是哪些异常类或者异常类名。
+
+---
+#### timeout
+
+用于设置事务处理的时间长度，阻止可能出现的长时间的阻塞系统或者占用系统资源。单位为秒。如果超时设置事务回滚，并抛出TransactionTimedOutException异常。
+
+---
+#### value
+
+value这里主要用来指定不同的事务管理器；主要用来满足在同一个系统中，存在不同的事务管理器。
+
+比如在Spring中，声明了两种事务管理器txManager1, txManager2.然后，用户可以根据这个参数来根据需要指定特定的txManager.
+
+- 存在多个事务管理器的情况: 在一个系统中，需要访问多个数据源，则必然会配置多个事务管理器。
+
+---
+## 注意点
+
+- 不要在接口上使用注解，可能会无效，要在实现类的具体方法上写。
+- 可以在类级别上使用注释，但是会使类下的所有方法都有事务，影响效率。
+- 只能对public方法使用事务，@Transactional注解的方法都是被外部其他类调用才有效，故只能是public。
+- 使用了@Transactional的方法，对同一个类里面的方法调用， @Transactional无效。比如有一个类Test，它的一个方法A，A再调用Test本类的方法B（不管B是否public还是private），但A没有声明注解事务，而B有。则外部调用A之后，B的事务是不会起作用的。
+
+
+---
+## 不回滚的情况
+ spring事务机制：
+- 默认spring事务只在发生未被捕获的RuntimeException时才回滚。
+- spring aop异常捕获原理：被拦截的方法需要显式抛出异常，不能经过处理，这样aop代理才能捕获到方法的异常，才能进行回滚。
+
+    默认情况下aop只捕获RuntimeException的异常，但可以通过配置来捕获特定的异常并回滚。换句话说，在service的方法中不使用try-catch或者在catch中最后加上throw new RuntimeException()，这样程序发生异常时才能被aop捕获进而回滚。
+- 解决方案：
+
+   - 例如Service层处理事务，那么Service中的方法中不做异常捕获，或者在catch语句中最后增加throw new RuntimeException()语句，以便aop捕获异常再去回滚，并且在service上层要继续捕获这个异常并处理。
+
+   - 在service层方法的catch语句中增加：TransactionAspectSupport.currentTransactionStatus().setRollbackOnly()；语句，手动回滚，这样上层就无需去处理异常。
