@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      事务(Transactional)详解
-subtitle:   事务特性、隔离级别、传播机制
+title:      @Transactional注解的用法和实例
+subtitle:   自己写的声明式事务@Transactional
 date:       2018-10-29
 author:     Zwx
-header-img: img/post-bg-YesOrNo.jpg
+header-img: img/post-bg-digital-native.jpg
 catalog: true
 tags:
     - Sql
