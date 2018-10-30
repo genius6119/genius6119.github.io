@@ -119,3 +119,5 @@ value这里主要用来指定不同的事务管理器；主要用来满足在同
    - 例如Service层处理事务，那么Service中的方法中不做异常捕获，或者在catch语句中最后增加throw new RuntimeException()语句，以便aop捕获异常再去回滚，并且在service上层要继续捕获这个异常并处理。
 
    - 在service层方法的catch语句中增加：TransactionAspectSupport.currentTransactionStatus().setRollbackOnly()；语句，手动回滚，这样上层就无需去处理异常。
+   
+   - SQLException本身是受检查的异常，但是在Spring框架下，抛出的是org.springframework.dao包中的异常，都是RuntimeException的子类，这是有关数据库的异常会回滚的原因。
