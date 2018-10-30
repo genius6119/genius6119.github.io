@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      事务（@Transactional注解)的用法和实例
-subtitle:   自己写的声明式事务@Transactional例子
+subtitle:   声明式事务@Transactional例子
 date:       2018-10-29
 author:     Zwx
 header-img: img/post-bg-digital-native.jpg
@@ -121,3 +121,7 @@ value这里主要用来指定不同的事务管理器；主要用来满足在同
    - 在service层方法的catch语句中增加：TransactionAspectSupport.currentTransactionStatus().setRollbackOnly()；语句，手动回滚，这样上层就无需去处理异常。
    
    - SQLException本身是受检查的异常，但是在Spring框架下，抛出的是org.springframework.dao包中的异常，都是RuntimeException的子类，这是有关数据库的异常会回滚的原因。
+   
+---
+## 例子
+ 不想写了...
