@@ -71,7 +71,7 @@ ACID!
 
 　　Mysql的事务隔离级别分为四种，由低到高依次分别为：Read uncommited（读未提交）、Read commited（读提交）、Repeatable read （可重复读【默认】）、Serializable（序列化），这四个级别可以逐个解决脏读、不可重复读、幻读这几类问题。
 
-![](http://pgoj9ayje.bkt.clouddn.com/gljb.png)
+![](http://pic.zwxzzz.top/gljb.png)
 
 ----
 ## Spring事务传播机制

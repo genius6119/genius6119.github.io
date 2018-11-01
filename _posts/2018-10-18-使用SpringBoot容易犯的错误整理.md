@@ -27,13 +27,13 @@ tags:
 
 进入网页：
 Group设置组织名、Artifact设置项目名、选择Maven Project，Javelin项目，版本随便选 = = 
-![](http://pgoj9ayje.bkt.clouddn.com/start.png)
+![](http://pic.zwxzzz.top/start.png)
 点击Generate Project按钮,就可以得到一个空的SpringBoot项目了，解压后用idea直接打开就行。
 
 ---
 ## SpringBoot配置
 打开项目，结构如图所示：
-![](http://pgoj9ayje.bkt.clouddn.com/mulu.png)
+![](http://pic.zwxzzz.top/mulu.png)
 配置文件都放在resources下，除了.xml配置文件外，SpringBoot还支持.yml和.properties配置文件。个人认为，后两者都比.xml好很多。
 
 对于同一段数据库配置，
@@ -75,14 +75,14 @@ spring:  
 
 就像这样：
 
-![](http://pgoj9ayje.bkt.clouddn.com/mulu2.png)
+![](http://pic.zwxzzz.top/mulu2.png)
 
 ---
 ##Mapper.xxx方法找不到
 
 用Springboot连数据库测试时候，报出"Invalid bound statement (not found)"错误：
 
-![](http://pgoj9ayje.bkt.clouddn.com/error.png)
+![](http://pic.zwxzzz.top/error.png)
 
 经检查是maven的pom.xml文件中忘记加上：
 ```$xslt

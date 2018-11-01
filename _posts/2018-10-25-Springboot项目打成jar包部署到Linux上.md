@@ -16,7 +16,7 @@ tags:
 
 直接用maven插件打包,位置：`Maven Projects`-`Lifecycle`-`package`
 
-![](http://pgoj9ayje.bkt.clouddn.com/maven.png)
+![](http://pic.zwxzzz.top/maven.png)
   
 控制台输出`BUILD SUCCESS`时，说明打包成功
 ```
@@ -72,11 +72,11 @@ echo Start Success!
 
 访问ip+端口号:/接口名，如下图所示，表明SpringBoot部署启动成功：
 
-![](http://pgoj9ayje.bkt.clouddn.com/4445.png)
+![](http://pic.zwxzzz.top/4445.png)
 
 同时可以看到目录下生成了日志文件：
 
-![](http://pgoj9ayje.bkt.clouddn.com/xftp.png)
+![](http://pic.zwxzzz.top/xftp.png)
 
 #### 停止脚本
 输入命令：`vim stop.sh`，下面这段粘进去：
@@ -109,7 +109,7 @@ Stop Success!
 
 访问接口,发现已经无法访问，说明脚本运行成功：
 
-![](http://pgoj9ayje.bkt.clouddn.com/fail.png)
+![](http://pic.zwxzzz.top/fail.png)
 
 ----
 #### 检查脚本

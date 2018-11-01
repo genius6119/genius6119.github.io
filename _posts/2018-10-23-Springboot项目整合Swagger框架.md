@@ -119,11 +119,11 @@ public class DemoApplication {
 ## 运行
 
 配置到其实这里直接可以运行访问了，启动项目，访问`项目地址：端口号:/swagger-ui.html`效果如下:
-![](http://pgoj9ayje.bkt.clouddn.com/swa.png)
+![](http://pic.zwxzzz.top/swa.png)
 
 点击开发现有很多重复的：
 
-![](http://pgoj9ayje.bkt.clouddn.com/123.png)
+![](http://pic.zwxzzz.top/123.png)
 
 原因：要指定RequestMapping的method:
 ```java
@@ -187,7 +187,7 @@ public class HelloController {
 
 效果：
 
-![](http://pgoj9ayje.bkt.clouddn.com/234.png)
+![](http://pic.zwxzzz.top/234.png)
 
 例子2：
 ```java
@@ -215,7 +215,7 @@ public class HelloController {
 ```
 
 效果：
-![](http://pgoj9ayje.bkt.clouddn.com/456.png)
+![](http://pic.zwxzzz.top/456.png)
 
 
 ----
