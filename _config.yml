@@ -11,7 +11,7 @@ github_repo: "https://github.com/genius6119/genius6119.github.io" # you code rep
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "博观而约取，厚积而薄发。"
 sidebar-avatar: /img/touxiang.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
