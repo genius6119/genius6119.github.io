@@ -8,6 +8,7 @@ header-img: img/home-bg-o.jpg
 catalog: true
 tags:
     - SpringBoot
+    - Redis
 ---
 
 ---
@@ -22,7 +23,7 @@ tags:
 
 　　由于不了解SpringBoot2.0有什么变化，之前的版本用的1.5.18，这几天了解了一下变化，直接上了最新的SpringBoot2.1.1测试版。顺便踩踩坑~
 
---
+---
 ## 配置
 
 在application.yml中添加：
