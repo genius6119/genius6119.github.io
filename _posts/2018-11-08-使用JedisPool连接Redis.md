@@ -2,7 +2,7 @@
 layout:     post
 title:      使用JedisPool连接Redis
 subtitle:   ——SpringBoot2.1.1+Redis4.0.1
-date:       2018-11-06
+date:       2018-11-08
 author:     Zwx
 header-img: img/home-bg-o.jpg
 catalog: true
