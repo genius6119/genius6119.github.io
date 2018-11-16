@@ -16,7 +16,7 @@ tags:
 
 - 源码：
 
-```java
+```
 /**
      * Interrupts this thread.
      *
@@ -77,7 +77,7 @@ tags:
 - 调用当前线程的isInterrupted(false)方法,返回一个boolean值。
 - 源码：
 
-```java
+```
     /**
      * Tests whether this thread has been interrupted.  The <i>interrupted
      * status</i> of the thread is unaffected by this method.
@@ -105,7 +105,7 @@ tags:
 
 - 源码：
 
-```java
+```
 /**
      * Tests whether the current thread has been interrupted.  The
      * <i>interrupted status</i> of the thread is cleared by this method.  In
