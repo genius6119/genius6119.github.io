@@ -15,6 +15,7 @@ tags:
 - 使一个线程的中断状态为true，但是不立即中断这个线程。
 
 - 源码：
+
 ```java
 /**
      * Interrupts this thread.
@@ -70,10 +71,12 @@ tags:
         interrupt0();
     }
 ```
+
 ## isInterrupted
 - 查看当前线程的中断状态。
 - 调用当前线程的isInterrupted(false)方法,返回一个boolean值。
 - 源码：
+
 ```java
     /**
      * Tests whether this thread has been interrupted.  The <i>interrupted
@@ -101,6 +104,7 @@ tags:
 - Thread类的一个静态方法，清除当前线程的中断状态，调用当前线程的isInterrupted(true)方法,返回一个boolean值。
 
 - 源码：
+
 ```java
 /**
      * Tests whether the current thread has been interrupted.  The
@@ -128,6 +132,7 @@ tags:
 
 ## 被调用的isInterrupted(boolean)
 - 这是个native方法，不过可以通过变量名看出是要清除中断状态。如果这个参数为true，说明返回线程的状态位后，要清掉原来的状态位（恢复成原来情况）。这个参数为false，就是直接返回线程的状态位。
+
 ```
 /**
      * Tests if some Thread has been interrupted.  The interrupted state
