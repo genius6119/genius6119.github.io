@@ -17,7 +17,7 @@ tags:
 - 当然，方法名称要符合一定的约定：
 
     | Keyword        | Sample    |  
-    | --------   | -----:   | 
+    | --------   | :-----  | 
     | And        | findByNameAndPrice      |  
     | Or        | findByNameOrPrice      |  
     | Is        | findByName      |  
