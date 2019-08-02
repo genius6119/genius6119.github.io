@@ -355,6 +355,32 @@ public class EsDemoApplicationTests {
 
 - 对es的操作既可以使用esTemplate，也可以使用自定义方法，复杂查询时候可以用SpringJPA提供的NativeSearchQueryBuilder，这里具体的我也在深入学习中。
 
+#### Controller层
+```java
+    @RequestMapping("/insertBook")
+    public String insertBook(Book book){
+        bookService.insertBook(book);
+        return "ok";
+    }
+```
+#### service层
+```java
+@Service
+public class BookService {
+
+    @Autowired
+    private KafkaProducer kafkaProducer;
+
+    @Autowired
+    private BookRepository bookRepository;
+
+    public void insertBook(Book book) {
+        bookRepository.save(book);
+        EsBook book1 = new EsBook(book.getId(),book.getName());
+        kafkaProducer.insertBook(book1);
+    }
+}
+```
 ## kafka
 - 我这里用的语法很简单：
 - 发送消息：kafkaTemplate.send();
@@ -420,4 +446,9 @@ public class KafkaConsumer {
         }
     }
 }
+
 ```
+
+----
+## 源码 
+<https://github.com/genius6119/es_demo>
