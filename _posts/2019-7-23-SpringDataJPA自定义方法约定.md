@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      SpringDataJPA自定义方法约定
-subtitle:   -可用于mysql，es等
+subtitle:   ——可用于mysql，es等
 date:       2019-07-23
 author:     Zwx
 header-img: img/post-bg-rwd.jpg
